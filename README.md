@@ -1,2 +1,0 @@
-# Tcalc
-wows tcalc
