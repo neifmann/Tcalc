@@ -1,0 +1,4 @@
+rus cr 8 Chapai 11
+ger cr 8 Hipper 11
+usa bb 10 Montana 15
+jap dd 10 Shimakaze 11

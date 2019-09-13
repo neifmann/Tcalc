@@ -2,9 +2,20 @@ import static java.lang.Math.floor;
 
 public class Ship {
     private Integer lvl, pts;
-    private String name, type;
+    private String name, type, nation;
 
-    //общий конструктор
+    //базовый конструктор
+    public Ship ( String nation, String type, Integer lvl, String name, Integer pts) {
+
+        this.nation = nation;
+        this.type = type;
+        this.lvl = lvl;
+        this.name = name;
+        this.pts = pts;
+
+    }
+
+    //общий конструктор*
     public Ship (String name, Integer lvl, String type) {
         this.name = name;
         this.lvl = lvl;

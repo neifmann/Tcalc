@@ -1,0 +1,11 @@
+rus
+usa
+gbr
+jpn
+fra
+ita
+ger
+eur
+ais
+amr
+com
