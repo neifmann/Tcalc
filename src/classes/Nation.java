@@ -5,12 +5,14 @@ import java.util.HashMap;
 public class Nation {
     private HashMap<String,ShipClass> classList;
 
-    public void Nation () {
+    public Nation () {
     }
 
     public void AddClassByName(String className){
-        ShipClass shipClass = new ShipClass();
-        this.classList.put(className, shipClass);
+        if (!this.classList.containsKey(className)) {
+            ShipClass shipClass = new ShipClass();
+            this.classList.put(className, shipClass);
+        }
     }
 
     public ShipClass GetShipClassByName(String className){

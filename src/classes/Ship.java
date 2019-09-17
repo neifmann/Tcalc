@@ -6,7 +6,10 @@ public class Ship {
     private Integer lvl, pts;
     private String name, type, nation;
 
-    //базовый конструктор
+    public Ship(){
+
+    }
+
     public Ship ( String nation, String type, Integer lvl, String name, Integer pts) {
 
         this.nation = nation;
@@ -17,7 +20,6 @@ public class Ship {
 
     }
 
-    //общий конструктор*
     public Ship (String name, Integer lvl, String type) {
         this.name = name;
         this.lvl = lvl;
@@ -56,7 +58,6 @@ public class Ship {
         }
     }
 
-    //спец. конструктор
     public Ship (String name, Integer lvl, String type, Integer pts) {
         this.name = name;
         this.lvl = lvl;
