@@ -15,7 +15,11 @@ public class Nation {
         }
     }
 
-    public ShipClass GetShipClassByName(String className){
+    public ShipClass GetClassByName(String className){
         return this.classList.get(className);
+    }
+
+    public HashMap <String,ShipClass> GetNation(){
+        return this.classList;
     }
 }

@@ -3,14 +3,13 @@ package classes;
 import static java.lang.Math.floor;
 
 public class Ship {
-    private Integer lvl, pts;
-    private String name, type, nation;
+    private String name, type, nation, lvl, pts;
 
     public Ship(){
 
     }
 
-    public Ship ( String nation, String type, Integer lvl, String name, Integer pts) {
+    public Ship ( String nation, String type, String  lvl, String name, String pts) {
 
         this.nation = nation;
         this.type = type;
@@ -20,7 +19,8 @@ public class Ship {
 
     }
 
-    public Ship (String name, Integer lvl, String type) {
+    /*
+    public Ship (String name, String lvl, String type) {
         this.name = name;
         this.lvl = lvl;
         this.type = type;
@@ -57,15 +57,16 @@ public class Ship {
                 throw new IllegalStateException("Unexpected value: " + type);
         }
     }
+    */
 
-    public Ship (String name, Integer lvl, String type, Integer pts) {
+    public Ship (String name, String lvl, String type, String pts) {
         this.name = name;
         this.lvl = lvl;
         this.type = type;
         this.pts = pts;
     }
 
-    public Integer getPts() {
+    public String  getPts() {
         return this.pts;
     }
 

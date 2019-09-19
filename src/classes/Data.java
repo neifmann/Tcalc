@@ -19,7 +19,7 @@ public class Data {
         return this.dataMap.get(nationName);
     }
 
-    public HashMap GetData(){
+    public HashMap <String,Nation> GetData(){
         return this.dataMap;
     }
 }

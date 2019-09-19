@@ -20,4 +20,8 @@ public class ShipLvl {
     public Ship GetShipByName(String shipName){
         return this.shipList.get(shipName);
     }
+
+    public HashMap <String, Ship> getShipLvl() {
+        return this.shipList;
+    }
 }

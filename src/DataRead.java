@@ -1,9 +1,12 @@
 import classes.Data;
+import classes.Nation;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class DataRead {
@@ -25,7 +28,9 @@ public class DataRead {
         String readLine = "";
 
         while ((readLine = b.readLine()) != null) {
-            data.GetData().forEach((k,v)->{v.AddClassByName(readLine)});
+            for (Map.Entry <String, Nation> entry : data.GetData().entrySet()) {
+                entry.getValue().AddClassByName(readLine);
+            }
         }
     }
 

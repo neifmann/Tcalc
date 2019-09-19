@@ -19,4 +19,8 @@ public class ShipClass {
     public ShipLvl GetLvlByNum(String lvlNum){
         return this.lvlList.get(lvlNum);
     }
+
+    public HashMap <String, ShipLvl> getShipClass() {
+        return this.lvlList;
+    }
 }
