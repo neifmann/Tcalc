@@ -66,6 +66,11 @@ public class Ship {
         this.pts = pts;
     }
 
+    public Ship (String name, String pts) {
+        this.name = name;
+        this.pts = pts;
+    }
+
     public String  getPts() {
         return this.pts;
     }

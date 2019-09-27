@@ -4,9 +4,17 @@ import java.util.HashMap;
 
 public class ShipLvl {
     private HashMap<String,Ship> shipList;
+    private Integer num;
+    private String name;
 
     public ShipLvl(){
 
+    }
+
+    public ShipLvl(String lvlName, Integer lvlIterator){
+        this.name = lvlName;
+        lvlIterator = lvlIterator + 1;
+        this.num = lvlIterator;
     }
 
     public void AddShipByName(String shipName, Ship ship){

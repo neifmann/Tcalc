@@ -4,8 +4,16 @@ import java.util.HashMap;
 
 public class Nation {
     private HashMap<String,ShipClass> classList;
+    private Integer num;
+    private String name;
 
     public Nation () {
+    }
+
+    public Nation (String nationName, Integer nationIterator) {
+        this.name = nationName;
+        nationIterator = nationIterator + 1;
+        this.num = nationIterator;
     }
 
     public void AddClassByName(String className){
